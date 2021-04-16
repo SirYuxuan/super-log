@@ -28,7 +28,7 @@ dependencies {
 
 intellij {
     pluginName 'Super Log'
-    version '162.1628.40'
+    version '2020.1'
 }
 patchPluginXml {
     changeNotes """

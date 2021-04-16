@@ -51,11 +51,11 @@ public class SuperLogWindowFactory implements ToolWindowFactory {
 
         toolWindowPanel.setToolbar(createActionToolBar().getComponent());
 
-        Content content =  toolWindow.getContentManager().getFactory().createContent(toolWindowPanel, "By Sir丶雨轩 交流群: 875477818", false);
+        Content content =  toolWindow.getContentManager().getFactory().createContent(toolWindowPanel, "By Sir丶雨轩 ", false);
 
         toolWindow.getContentManager().addContent(content);
 
-        ConsoleUtil.print("欢迎使用SuperLog 日志增强插件 By Sir丶雨轩 交流群: 875477818");
+        ConsoleUtil.print("欢迎使用SuperLog 日志增强插件 By Sir丶雨轩");
 
     }
 }
