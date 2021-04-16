@@ -13,7 +13,7 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <consoleFilterProvider  implementation="com.yuxuan66.superlog.provider.SQLLogProvider"/>
-        <toolWindow canCloseContents="false" anchor="bottom" id="superLog"  factoryClass="com.yuxuan66.superlog.window.SuperLogWindowFactory" />
+        <toolWindow canCloseContents="false" anchor="bottom" id="SuperLog" icon="/nodes/dataView.png"  factoryClass="com.yuxuan66.superlog.window.SuperLogWindowFactory" />
     </extensions>
 
     <actions>

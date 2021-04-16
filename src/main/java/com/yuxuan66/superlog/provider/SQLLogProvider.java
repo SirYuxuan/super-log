@@ -4,6 +4,7 @@ import com.intellij.execution.filters.ConsoleFilterProvider;
 import com.intellij.execution.filters.Filter;
 import com.intellij.execution.ui.ConsoleViewContentType;
 import com.intellij.openapi.project.Project;
+import com.yuxuan66.superlog.utils.StateUtil;
 import com.yuxuan66.superlog.window.SuperLogWindowFactory;
 import org.jetbrains.annotations.NotNull;
 
@@ -18,7 +19,9 @@ public class SQLLogProvider implements ConsoleFilterProvider {
     @Override
     public Filter[] getDefaultFilters(@NotNull Project project) {
         return new Filter[]{(data, line) -> {
-            System.out.println(data);
+            if(StateUtil.isMonitor()){
+                System.out.println(data);
+            }
             return null;
         }};
     }
