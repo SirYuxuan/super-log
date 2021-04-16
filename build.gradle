@@ -1,0 +1,41 @@
+buildscript {
+    repositories {
+        maven {
+            url 'https://maven.aliyun.com/nexus/content/groups/public/'
+        }
+        maven {
+            url 'https://maven.aliyun.com/nexus/content/repositories/jcenter'
+        }
+    }
+}
+
+
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.7.2'
+}
+
+group 'com.yuxuan66'
+version '1.0.0-alpha'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'cn.hutool', name: 'hutool-all', version: '5.0.5'
+}
+
+intellij {
+    pluginName 'Super Log'
+    version '162.1628.40'
+}
+patchPluginXml {
+    changeNotes """
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>"""
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
