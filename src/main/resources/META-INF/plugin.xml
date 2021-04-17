@@ -1,4 +1,5 @@
 <idea-plugin>
+    <idea-version since-build="162.1628.40" />
     <id>com.yuxuan66.super-log</id>
     <name>Super Log</name>
     <vendor email="1718018032@qq.com" url="https://www.yuxuan66.com">Sir丶雨轩</vendor>

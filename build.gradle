@@ -9,11 +9,16 @@ buildscript {
     }
 }
 
-
 plugins {
-    id 'java'
     id 'org.jetbrains.intellij' version '0.7.2'
 }
+
+jar {
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+apply plugin: 'idea'
+apply plugin: 'org.jetbrains.intellij'
 
 group 'com.yuxuan66'
 version '1.0.0-alpha'
@@ -28,12 +33,16 @@ dependencies {
 
 intellij {
     pluginName 'Super Log'
-    version '2020.1'
+    version '162.1628.40'
+    updateSinceUntilBuild false
+    publishPlugin {
+        token ''
+    }
 }
 patchPluginXml {
     changeNotes """
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>"""
+        变更插件兼容版本，让插件兼容更高的版本
+    """
 }
 
 tasks.withType(JavaCompile) {
