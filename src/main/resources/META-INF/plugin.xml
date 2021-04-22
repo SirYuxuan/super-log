@@ -5,9 +5,12 @@
     <vendor email="1718018032@qq.com" url="https://www.yuxuan66.com">Sir丶雨轩</vendor>
 
     <description><![CDATA[
-    一个帮您格式化MyBatis SQL日志的工具 </br>
-    更多未知功能等你发掘，
-    更多未知功能等你发掘，
+   A tool to help you format mybatis SQL log <br/>
+
+More unknown functions are waiting for you to explore, <br/>
+At present, it supports automatic conversion of SQL logs printed by mybatis to executable SQL,
+
+Later will support JPA, manual formatting and other methods
     ]]></description>
 
     <depends>com.intellij.modules.platform</depends>

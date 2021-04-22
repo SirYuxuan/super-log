@@ -21,7 +21,7 @@ apply plugin: 'idea'
 apply plugin: 'org.jetbrains.intellij'
 
 group 'com.yuxuan66'
-version '1.0.0-alpha'
+version '1.0.1-alpha'
 
 repositories {
     mavenCentral()
@@ -36,12 +36,12 @@ intellij {
     version '162.1628.40'
     updateSinceUntilBuild false
     publishPlugin {
-        token ''
+        token 'perm:MTcxODAxODAzMg==.OTItMzc1MA==.DGF1Vqftqt8Gz1RazNnvNXBPUe4jxc'
     }
 }
 patchPluginXml {
     changeNotes """
-        变更插件兼容版本，让插件兼容更高的版本
+       Change the compatible version of the plug-in to make it compatible with a higher version
     """
 }
 
